@@ -149,4 +149,11 @@
 		</plugins>
 	</build>
 
+	<scm>
+		<connection>scm:git:git@github.com:HARILOOW/officiel-lab-production.git</connection>
+		<developerConnection>scm:git:git@github.com:HARILOOW/officiel-lab-production.git</developerConnection>
+		<url>https://github.com/HARILOOW/officiel-lab-production</url>
+		<tag>HEAD</tag>
+	</scm>
+
 </project>
