@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.core.Response;
 
 import ca.ulaval.glo4002.cart.application.shop.ShopApplicationService;
 import ca.ulaval.glo4002.cart.domain.shop.ShopItem;
@@ -23,8 +24,9 @@ public class ShopResource {
 
     @GET
     @Path("/available-items")
-    public List<ShopItemDto> listItems() {
-        List<ShopItem> shopItems = shopService.listAvailableItems();
-        return shopItemDtoAssembler.toDto(shopItems);
+    public Response listItems() {
+//        List<ShopItem> shopItems = shopService.listAvailableItems();
+//        return shopItemDtoAssembler.toDto(shopItems);
+        return Response.ok().build();
     }
 }
