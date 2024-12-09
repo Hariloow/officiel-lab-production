@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 
 import ca.ulaval.glo4002.cart.application.shop.ShopApplicationService;
 import ca.ulaval.glo4002.cart.domain.shop.ShopItem;
@@ -11,6 +13,7 @@ import ca.ulaval.glo4002.cart.interfaces.rest.shop.dto.ShopItemDto;
 import ca.ulaval.glo4002.cart.interfaces.rest.shop.dto.ShopItemDtoAssembler;
 
 @Path("/shop")
+@Produces(MediaType.APPLICATION_JSON)
 public class ShopResource {
 
     private ShopApplicationService shopService;
